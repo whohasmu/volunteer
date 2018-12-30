@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.JoinActivity"
+    android:orientation="vertical"
+
+
+
+
+    >
+
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccedff"
+        android:layout_below="@+id/id_main"
+        />
+
+
+
+
+
+
+    <include
+        android:id="@+id/ActionBar"
+        layout="@layout/actionbar_basic"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+
+
+        >
+        <LinearLayout
+
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/edt_join_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="아이디(영문+숫자 12자리까지)"
+                android:lines="1"
+                android:maxLength="12"
+                android:background="@drawable/shape_id_edit"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            >
+
+
+            <EditText
+
+                android:id="@+id/edt_join_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호(ex)volu1@!)"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:lines="1"
+                android:maxLength="15"
+                android:background="@drawable/shape_id_edit"
+                android:padding="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            >
+
+            <EditText
+                android:id="@+id/edt_join_pw2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호확인"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:lines="1"
+                android:maxLength="15"
+                android:background="@drawable/shape_id_edit"
+                android:padding="10dp"
+
+                />
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/setImage"
+                android:layout_alignRight="@+id/edt_join_pw2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+
+
+
+                />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+
+            >
+
+
+            <EditText
+                android:id="@+id/edt_join_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이름"
+                android:singleLine="true"
+                android:lines="1"
+                android:background="@drawable/shape_id_edit"
+                android:padding="10dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+
+            >
+
+
+            <EditText
+                android:id="@+id/edt_join_phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_id_edit"
+                android:hint="전화번호(-제외)"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:padding="10dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+
+            >
+
+
+            <EditText
+                android:id="@+id/edt_join_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이메일(ex) vol@naver.com)"
+                android:singleLine="true"
+                android:lines="1"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/shape_id_edit"
+                android:padding="10dp"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+           <RadioGroup
+               android:id="@+id/radio_group"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/check_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="남자" />
+
+            <RadioButton
+                android:id="@+id/check_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="여자" />
+           </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_join"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="회원가입"
+                android:background="@drawable/id_search"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

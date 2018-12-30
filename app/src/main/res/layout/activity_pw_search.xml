@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.IdSearchActivity"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/ActionBar"
+        layout="@layout/actionbar_basic"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccedff"
+        android:layout_below="@+id/ActionBar"
+
+        />
+
+
+
+    <RelativeLayout
+
+
+        android:layout_below="@+id/ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:id="@+id/Layout_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="아이디를 입력해 주세요."
+                android:textSize="17dp" />
+
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/Edit_Id"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="아이디 입력"
+                android:lines="1"
+                android:singleLine="true"
+                android:textSize="20dp"
+                android:background="@drawable/shape_id_edit"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/Button_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="확인"
+                android:background="@drawable/id_search"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+
+            android:id="@+id/Layout_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="이메일을 입력해 주세요.\n이메일에 임시비밀번호가 발급됩니다.\n임시비밀번호로 로그인 후 비밀번호를 변경해주세요."
+                android:textSize="17dp" />
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/Edit_Email"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="이메일입력"
+                android:lines="1"
+                android:singleLine="true"
+                android:background="@drawable/shape_id_edit"
+                android:padding="10dp"/>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/Button_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="전송"
+                android:background="@drawable/id_search"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

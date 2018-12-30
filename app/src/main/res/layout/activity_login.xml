@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/volunteer1">
+
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_id"
+                android:paddingLeft="5dp"
+
+                >
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="ID :"
+                    android:textSize="15dp"/>
+                <EditText
+                    android:id="@+id/edt_login_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="아이디입력"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:maxLength="12"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_id"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="PW :"
+                    />
+                <EditText
+                    android:id="@+id/edt_login_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="textPassword"
+                    android:hint="비밀번호입력"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:maxLength="12"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Login"
+            android:background="@drawable/shape_login"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Layout_AutoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout_login"
+        android:layout_alignStart="@+id/layout_login">
+        <CheckBox
+            android:id="@+id/CheckBox_AutoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자동로그인"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_search_id"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디찾기"
+        android:layout_below="@+id/Layout_AutoLogin"
+        android:layout_alignLeft="@+id/layout_login"
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_search_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호찾기"
+        android:layout_below="@+id/Layout_AutoLogin"
+        android:layout_toRightOf="@+id/txt_search_id"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_join"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:layout_below="@+id/Layout_AutoLogin"
+        android:layout_alignRight="@+id/layout_login"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13.5dp"
+        android:textColor="#905961f2"
+        android:text="Copyright 2018 ES all rights reserved."
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6.3dp"
+        />
+
+
+</RelativeLayout>
+

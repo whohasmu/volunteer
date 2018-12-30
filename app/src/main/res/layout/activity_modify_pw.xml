@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MyInfoActivity"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/actionbar_basic"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="새비밀번호 ▼ "/>
+                <EditText
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:id="@+id/Edit_Password1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxLength="15"
+                    android:inputType="textPassword"
+
+                    android:hint="(숫자,문자,특수기호 조합 6자 이상)"/>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호확인 ▼ "/>
+                <EditText
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:id="@+id/Edit_Password2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="ex )  volu2@"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxLength="15"
+                    android:inputType="textPassword"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/Button_Modify_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 변경"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

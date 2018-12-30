@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Party.PartyInfoActivity"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <include
+        layout="@layout/actionbar_basic"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:background="@color/actionbar"/>
+            <TextView
+                android:id="@+id/Text_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="글 제목"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image1"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/Text_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2018/~~/~~"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/Text_Writer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="글쓴이"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="조회수 : "
+                android:layout_toLeftOf="@+id/Text_Hit"
+                />
+            <TextView
+                android:id="@+id/Text_Hit"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/Text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내용 ▼"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+
+
+            <TextView
+                android:layout_below="@id/Text1"
+                android:id="@+id/Text_Content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사람구합니다."
+                />
+
+            <View
+                android:id="@+id/Line"
+                android:layout_below="@id/Text_Content"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+
+
+            <TextView
+                android:id="@+id/Text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="댓글 ▼"
+                android:layout_below="@+id/Line"
+                android:layout_marginTop="30dp"/>
+            <LinearLayout
+                android:layout_below="@+id/Text2"
+                android:id="@+id/Layout_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                >
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/Layout_comment"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/Edit_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:lines="1"/>
+
+                    <Button
+                        android:id="@+id/Button_AddComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="작성"
+                        android:backgroundTint="@color/actionbar"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

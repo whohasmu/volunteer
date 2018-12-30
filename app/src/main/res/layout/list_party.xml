@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical" >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/actionbar"/>
+            <TextView
+
+                android:id="@+id/Text_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+
+            />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Text_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018/08/30"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/Image_Comment_Icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/comment"/>
+        <TextView
+            android:id="@+id/Text_Comment_Num"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Image_Comment_Icon"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="3"/>
+
+        <TextView
+            android:id="@+id/Text_Writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/Layout_Views"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="홍길동"/>
+
+
+        <LinearLayout
+            android:id="@+id/Layout_Views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/hit"/>
+            <TextView
+                android:id="@+id/Text_Hit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="0"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

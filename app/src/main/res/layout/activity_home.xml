@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomeActivity"
+    android:orientation="vertical">
+
+       <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="2"
+        />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/Layout_menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_menu1"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/search_vol"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image1"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:text="자원봉사"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Layout_menu2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_menu2"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/announcement"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image2"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:text="공지사항"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/Layout_menu3"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_menu3"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/customerservice"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image3"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Q\u0026A"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Layout_menu4"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_menu4"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/message"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image4"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:text="모집"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

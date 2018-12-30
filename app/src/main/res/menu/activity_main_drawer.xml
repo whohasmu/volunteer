@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="목록 분류">
+            <menu>
+                <item
+                    android:id="@+id/nav_AllList"
+                    android:icon="@drawable/all"
+                    android:title="전체 목록" />
+                <item
+                    android:id="@+id/nav_AreaList"
+                    android:icon="@drawable/korea1"
+                    android:title="지역별 목록" />
+                <item
+                    android:id="@+id/nav_DateList"
+                    android:icon="@drawable/calendar"
+                    android:title="기간별 목록" />
+                <item
+                    android:id="@+id/nav_IntegrateList"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="통합검색"  />
+
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="마이페이지">
+        <menu>
+            <item
+                android:id="@+id/nav_favorite"
+                android:icon="@drawable/star"
+                android:title="즐겨찾기" />
+
+            <item
+                android:id="@+id/nav_MyInfo"
+                android:icon="@drawable/myinfo"
+                android:title="내정보 보기" />
+
+            <item
+                android:id="@+id/nav_LogOut"
+
+                android:title="로그아웃" />
+
+        </menu>
+
+
+    </item>
+
+</menu>

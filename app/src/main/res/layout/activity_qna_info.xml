@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notice.NoticeInfoActivity"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/actionbar_basic"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:background="@color/actionbar"/>
+            <TextView
+                android:id="@+id/Text_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="글 제목"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image1"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/Text_Date_Q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2018/~~/~~"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/Text_Writer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="글쓴이"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="조회수 : "
+                android:layout_toLeftOf="@+id/Text_Views"
+                />
+            <TextView
+                android:id="@+id/Text_Views"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="질문 ▼"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/Text_Content_Q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="질문내용입니다."
+                />
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="답변 ▼"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="답변일자 : "
+                    android:layout_toLeftOf="@+id/Text_Date_A"
+                    android:layout_marginRight="10dp"/>
+            <TextView
+                android:id="@+id/Text_Date_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018/~~/~~"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentRight="true"
+                />
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/Text_Content_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="답변입니다."
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

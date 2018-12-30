@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.IntegrateActivity">
+
+
+    <include
+        layout="@layout/actionbar_basic"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+
+            <Button
+                android:id="@+id/Button_Area"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="지역"
+                />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Button_Area"
+            android:layout_centerHorizontal="true"
+            android:text="에서"
+
+            />
+
+
+        <Button
+            android:id="@+id/Button_StartDate"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/text1"
+            android:text="시작날짜"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Button_StartDate"
+            android:layout_centerHorizontal="true"
+            android:text="부터"
+            />
+
+
+        <Button
+            android:id="@+id/Button_EndDate"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/text2"
+            android:text="종료날짜"
+            />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Button_EndDate"
+            android:layout_centerHorizontal="true"
+            android:text="까지"
+            />
+
+            <EditText
+                android:id="@+id/Edit_Searchinput"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:hint="검색어 ex) 연탄, 경로당"
+                android:singleLine="true"/>
+            <!--android:lines="1"-->
+        <Button
+            android:id="@+id/Button_Search"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/Edit_Searchinput"
+            android:layout_alignRight="@id/Button_StartDate"
+            android:text="검색"
+            />
+    </RelativeLayout>
+</RelativeLayout>
